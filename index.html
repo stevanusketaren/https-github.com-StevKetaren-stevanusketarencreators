@@ -5,18 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Perpustakaan SUKA BACA</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .mainmenubtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .dropdown-child {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-child {
+            display: block;
+        }
+
+        .dropdown-child a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-child a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body>
-<div class=”dropdown”>
- <button class=”mainmenubtn”>Main menu</button>
- <div class=”dropdown-child”>
-   <a href=”http://wwww.yourdonain.com/page1.html”>Child menu 1</a>
-   <a href=”http://wwww.yourdonain.com/page2.html”>Child menu 2</a>
-   <a href=”http://wwww.yourdonain.com/page3.html”>Child menu 3</a>
-   <a href=”http://wwww.yourdonain.com/page4.html”>Child menu 4</a>
-   <a href=”http://wwww.yourdonain.com/page5.html”>Child menu 5</a>
- </div>
+
 <div class="container mt-4">
+    <!-- Dropdown Menu -->
+    <div class="dropdown mb-4">
+        <button class="mainmenubtn">Main menu</button>
+        <div class="dropdown-child">
+            <a href="http://www.yourdomain.com/page1.html">Child menu 1</a>
+            <a href="http://www.yourdomain.com/page2.html">Child menu 2</a>
+            <a href="http://www.yourdomain.com/page3.html">Child menu 3</a>
+            <a href="http://www.yourdomain.com/page4.html">Child menu 4</a>
+            <a href="http://www.yourdomain.com/page5.html">Child menu 5</a>
+        </div>
+    </div>
+
     <div class="row">
         <!-- Kolom I -->
         <div class="col-md-4">
@@ -66,17 +106,12 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Kirim</button>
             </form>
+        </div>
+    </div>
+</div>
 
-            <hr>
-
-            <form>
-                <div class="form-group">
-                    <label for="message">Pesan:</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Masukkan pesan"></textarea>
-                </div>
-                <button type="submit" class="btn btn-secondary">Kirim Pesan</button>
-            </form>
-
-            <div class="mt-3">
-                <b
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
