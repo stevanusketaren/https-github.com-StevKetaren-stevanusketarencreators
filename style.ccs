@@ -4,8 +4,8 @@
 }
 
 nav {
-    background-color: #333;
-    display: block; /* Changed to block for full width */
+    background-color: #333; /* This sets the background of the entire nav */
+    display: block; /* Full width */
     width: 100%;
 }
 
@@ -17,14 +17,14 @@ nav ul {
 
 nav ul li {
     float: left;
-    background-color: #333;
+    background-color: orange; /* Change background color to orange */
 }
 
 nav a {
     display: block;
     padding: 0 10px;
-    color: #FFF;
-    line-height: 60px; /* Ensures the height of the nav */
+    color: #FFF; /* Text color white */
+    line-height: 60px; /* Height of the nav */
     font-size: 20px;
     text-decoration: none;
 }
@@ -35,3 +35,4 @@ nav:after {
     display: table;
     clear: both;
 }
+
