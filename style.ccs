@@ -5,7 +5,7 @@
 
 nav {
     background-color: #333;
-    display: inline-block;
+    display: block; /* Changed to block for full width */
     width: 100%;
 }
 
@@ -24,7 +24,14 @@ nav a {
     display: block;
     padding: 0 10px;
     color: #FFF;
-    line-height: 60px;
+    line-height: 60px; /* Ensures the height of the nav */
     font-size: 20px;
     text-decoration: none;
+}
+
+/* Clearfix for floating elements */
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
 }
