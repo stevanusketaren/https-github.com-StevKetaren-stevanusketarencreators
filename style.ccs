@@ -31,7 +31,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:focus {
     color: #fff;
-    background: #222; /* Tambahkan latar belakang saat fokus */
+    background: #222; /* Latar belakang saat fokus */
 }
 
 nav ul ul {
@@ -77,5 +77,7 @@ nav ul ul ul {
         display: block; /* Mengubah menu menjadi blok di perangkat kecil */
     }
     nav ul li {
-        float: none; /* Menghapus float pada item
+        float: none; /* Menghapus float pada item menu */
+    }
+}
 
