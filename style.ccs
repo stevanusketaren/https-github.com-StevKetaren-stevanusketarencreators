@@ -1,59 +1,10 @@
-#halaman {
-    width: 800px;
-    margin: auto;
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 20px;
 }
 
-nav {
-    background-color: #333; /* This sets the background of the entire nav */
-    display: block; /* Full width */
-    width: 100%;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-nav ul li {
-    float: left;
-    background-color: orange; /* Change background color to orange */
-}
-
-nav a {
-    display: block;
-    padding: 0 10px;
-    color: #FFF; /* Text color white */
-    line-height: 60px; /* Height of the nav */
-    font-size: 20px;
-    text-decoration: none;
-}
-nav a:hover {
-    background-color: #0000FF; /* Mengubah warna latar belakang saat hover */
-}
-
-nav ul ul {
-    display: none; /* Menyembunyikan submenu */
-    position: absolute;
-    top: 60px; /* Mengatur posisi submenu */
-}
-
-nav ul li:hover > ul {
-    display: block; /* Menampilkan submenu saat hover */
-}
-
-nav ul ul li {
-    width: 170px; /* Mengatur lebar item submenu */
-    float: none; /* Memastikan item ditumpuk secara vertikal */
-    display: list-item; /* Memastikan item submenu ditampilkan sebagai item daftar */
-    position: relative; /* Memungkinkan penempatan submenu */
-}
-
-
-/* Clearfix for floating elements */
-nav:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
