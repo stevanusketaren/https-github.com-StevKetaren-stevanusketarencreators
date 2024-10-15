@@ -7,4 +7,36 @@
     margin-top: 20px;
 }
 
+.mainmenubtn:hover {
+    background-color: blue;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+    position: absolute; /* Ensures it positions correctly */
+    z-index: 1; /* Keeps dropdown above other content */
+}
+
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-child a:hover {
+    background-color: lightblue; /* Adds hover effect for links */
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
 
