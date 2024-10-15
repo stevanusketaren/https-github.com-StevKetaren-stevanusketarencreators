@@ -28,23 +28,27 @@ nav a {
     font-size: 20px;
     text-decoration: none;
 }
-nav a:hover{
-background-color:#0000FF;
+nav a:hover {
+    background-color: #0000FF; /* Mengubah warna latar belakang saat hover */
 }
+
 nav ul ul {
-    display: none;
+    display: none; /* Menyembunyikan submenu */
     position: absolute;
-    top:60px;
+    top: 60px; /* Mengatur posisi submenu */
 }
-naf ul li:hover> ul {
-display:block;
+
+nav ul li:hover > ul {
+    display: block; /* Menampilkan submenu saat hover */
 }
-nav ul ul li{
-width:170px;
-float: none;
-display: list-item;
-position: relative;
+
+nav ul ul li {
+    width: 170px; /* Mengatur lebar item submenu */
+    float: none; /* Memastikan item ditumpuk secara vertikal */
+    display: list-item; /* Memastikan item submenu ditampilkan sebagai item daftar */
+    position: relative; /* Memungkinkan penempatan submenu */
 }
+
 
 /* Clearfix for floating elements */
 nav:after {
