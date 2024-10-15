@@ -1,61 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
- 
-    <title>Membuat Multi dropdown Menu dengan HTML dan CSS</title>
- 
-    <link rel="stylesheet" href="style.ccs" />
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Multi Dropdown Menu dengan HTML dan CSS</title>
+    <link rel="stylesheet" href="style.css"> <!-- Memperbaiki nama file dari style.ccs ke style.css -->
 </head>
- 
 <body>
- 
+
     <nav>
- 
-       <ul>
- 
+        <ul>
             <li><a href="#">Beranda</a></li>
- 
-            <li><a href="#">Profil</a>
- 
+            <li>
+                <a href="#">Profil</a>
                 <ul>
- 
                     <li><a href="#">Profil 1</a></li>
- 
                     <li><a href="#">Profil 2</a></li>
- 
                 </ul>
- 
             </li>
- 
-            <li class="dropdown"><a href="#">Kategori</a>
- 
-              <ul>
- 
-                <li><a href="#">CSS</a></li>
- 
-                <li><a href="#">PHP</a></li>
- 
-                <li><a href="#">Jquery</a></li>
- 
-                <li><a href="#">HTML</a>
-                    <ul>
-                        <li><a href="#">Dasar HTML</a></li>
- 
-                        <li><a href="#">Tag HTML</a></li>
- 
+            <li class="dropdown">
+                <a href="#">Kategori</a>
+                <ul>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">Jquery</a></li>
+                    <li>
+                        <a href="#">HTML</a>
+                        <ul>
+                            <li><a href="#">Dasar HTML</a></li>
+                            <li><a href="#">Tag HTML</a></li>
                         </ul>
-                   </li>
-               </ul>
- 
+                    </li>
+                </ul>
             </li>
- 
             <li><a href="#">Kontak</a></li>
-             
         </ul>
- 
     </nav>
- 
+
 </body>
- 
 </html>
+
