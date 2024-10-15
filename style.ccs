@@ -6,35 +6,24 @@
     padding: 20px;
     margin-top: 20px;
 }
-
 .mainmenubtn:hover {
     background-color: blue;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-child {
     display: none;
     background-color: skyblue;
     min-width: 200px;
-    position: absolute; /* Memastikan dropdown berada di atas konten lain */
-    z-index: 1; /* Menjaga dropdown tetap di atas */
 }
-
 .dropdown-child a {
     color: blue;
     padding: 20px;
     text-decoration: none;
     display: block;
 }
-
-.dropdown-child a:hover {
-    background-color: lightblue; /* Efek hover untuk tautan */
-}
-
 .dropdown:hover .dropdown-child {
     display: block;
 }
