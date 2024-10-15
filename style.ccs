@@ -31,7 +31,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:focus {
     color: #fff;
-    background: #222; /* Latar belakang saat fokus */
+    background: #8A2BE2; /* Latar belakang saat fokus */
 }
 
 nav ul ul {
