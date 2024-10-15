@@ -20,8 +20,8 @@
     display: none;
     background-color: skyblue;
     min-width: 200px;
-    position: absolute; /* Ensures it positions correctly */
-    z-index: 1; /* Keeps dropdown above other content */
+    position: absolute; /* Memastikan dropdown berada di atas konten lain */
+    z-index: 1; /* Menjaga dropdown tetap di atas */
 }
 
 .dropdown-child a {
@@ -32,11 +32,9 @@
 }
 
 .dropdown-child a:hover {
-    background-color: lightblue; /* Adds hover effect for links */
+    background-color: lightblue; /* Efek hover untuk tautan */
 }
 
 .dropdown:hover .dropdown-child {
     display: block;
 }
-
-
