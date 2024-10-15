@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pemesanan Buku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulir Pemesanan Buku</h1>
+    <form action="/submit-pemesanan" method="post">
+        <label for="nama">Nama Pemesan:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="judul-buku">Judul Buku:</label>
+        <input type="text" id="judul-buku" name="judul-buku" required>
+        
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" required min="1">
+        
+        <button type="submit">Pesan Buku</button>
+    </form>
+</body>
+</html>
