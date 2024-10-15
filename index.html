@@ -1,21 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Menu</title>
-    <link rel="stylesheet" href="style.ccs">
+ 
+    <title>Membuat Multi dropdown Menu dengan HTML dan CSS</title>
+ 
+    <link rel="stylesheet" href="style.css" />
+ 
 </head>
+ 
 <body>
-    <div class="dropdown">
-        <button class="mainmenubtn">Main Menu</button>
-        <div class="dropdown-child">
-            <a href="http://www.yourdomain.com/page1.html">Sub Menu 1</a>
-            <a href="http://www.yourdomain.com/page2.html">Sub Menu 2</a>
-            <a href="http://www.yourdomain.com/page3.html">Sub Menu 3</a>
-            <a href="http://www.yourdomain.com/page4.html">Sub Menu 4</a>
-            <a href="http://www.yourdomain.com/page5.html">Sub Menu 5</a>
-        </div>
-    </div>
+ 
+    <nav>
+ 
+       <ul>
+ 
+            <li><a href="#">Beranda</a></li>
+ 
+            <li><a href="#">Profil</a>
+ 
+                <ul>
+ 
+                    <li><a href="#">Profil 1</a></li>
+ 
+                    <li><a href="#">Profil 2</a></li>
+ 
+                </ul>
+ 
+            </li>
+ 
+            <li class="dropdown"><a href="#">Kategori</a>
+ 
+              <ul>
+ 
+                <li><a href="#">CSS</a></li>
+ 
+                <li><a href="#">PHP</a></li>
+ 
+                <li><a href="#">Jquery</a></li>
+ 
+                <li><a href="#">HTML</a>
+                    <ul>
+                        <li><a href="#">Dasar HTML</a></li>
+ 
+                        <li><a href="#">Tag HTML</a></li>
+ 
+                        </ul>
+                   </li>
+               </ul>
+ 
+            </li>
+ 
+            <li><a href="#">Kontak</a></li>
+             
+        </ul>
+ 
+    </nav>
+ 
 </body>
+ 
 </html>
