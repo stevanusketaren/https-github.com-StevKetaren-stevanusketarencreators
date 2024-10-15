@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Perpanjangan Peminjaman Buku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulir Perpanjangan Peminjaman Buku</h1>
+    <form action="/submit-perpanjangan" method="post">
+        <label for="nama">Nama Peminjam:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="judul-buku">Judul Buku:</label>
+        <input type="text" id="judul-buku" name="judul-buku" required>
+        
+        <label for="tanggal-perpanjangan">Tanggal Perpanjangan:</label>
+        <input type="date" id="tanggal-perpanjangan" name="tanggal-perpanjangan" required>
+        
+        <button type="submit">Ajukan Perpanjangan</button>
+    </form>
+</body>
+</html>
 
