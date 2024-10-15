@@ -1,29 +1,81 @@
-.mainmenubtn {
-    background-color: skyblue;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 20px;
-    margin-top: 20px;
-}
-.mainmenubtn:hover {
-    background-color: blue;
-}
-.dropdown {
+nav ul {
+    background: #111;
+    padding: 0;
+    list-style: none;
     position: relative;
-    display: inline-block;
+    width: 100%;
+    font-family: 'Helvetica', Arial, sans-serif;
 }
-.dropdown-child {
-    display: none;
-    background-color: skyblue;
-    min-width: 200px;
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
 }
-.dropdown-child a {
-    color: blue;
-    padding: 20px;
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:hover {
+    background-color: #222;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 30px;
     text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #fff;
+    background: #222; /* Tambahkan latar belakang saat fokus */
+}
+
+nav ul ul {
+    display: none;
+    background: #111;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    max-width: 300px;
+    width: auto;
+}
+
+nav ul ul li {
+    float: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+nav ul li:hover > ul,
+nav ul li:focus-within > ul { /* Menampilkan dropdown saat fokus pada item induk */
     display: block;
 }
-.dropdown:hover .dropdown-child {
-    display: block;
+
+nav ul ul li a {
+    padding: 10px 40px;
+    color: #fff;
 }
+
+nav ul ul li a:hover,
+nav ul ul li a:focus {
+    background: #222;
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 200px;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    nav ul {
+        display: block; /* Mengubah menu menjadi blok di perangkat kecil */
+    }
+    nav ul li {
+        float: none; /* Menghapus float pada item
+
