@@ -47,3 +47,82 @@ style.ccs
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .book {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Perpustakaan</h1>
+    <label for="category">Pilih Kategori:</label>
+    <select id="category" onchange="filterBooks()">
+        <option value="all">Semua</option>
+        <option value="fiksi">Fiksi</option>
+        <option value="non-fiksi">Non-Fiksi</option>
+        <option value="sains">Sains</option>
+    </select>
+
+    <div id="bookList"></div>
+
+    <script>
+        // Variabel untuk menyimpan data buku
+        const books = [
+            { title: "Buku Fiksi 1", category: "fiksi" },
+            { title: "Buku Fiksi 2", category: "fiksi" },
+            { title: "Buku Non-Fiksi 1", category: "non-fiksi" },
+            { title: "Buku Sains 1", category: "sains" },
+            { title: "Buku Sains 2", category: "sains" },
+            { title: "Buku Non-Fiksi 2", category: "non-fiksi" }
+        ];
+
+        // Fungsi untuk menampilkan buku
+        function displayBooks(booksToDisplay) {
+            const bookList = document.getElementById("bookList");
+            bookList.innerHTML = ""; // Kosongkan daftar buku
+            
+            // Struktur perulangan untuk menampilkan setiap buku
+            for (let i = 0; i < booksToDisplay.length; i++) {
+                const book = booksToDisplay[i];
+                const bookDiv = document.createElement("div");
+                bookDiv.classList.add("book");
+                bookDiv.textContent = book.title + " (" + book.category + ")";
+                bookList.appendChild(bookDiv);
+            }
+        }
+
+        // Fungsi untuk memfilter buku berdasarkan kategori
+        function filterBooks() {
+            const selectedCategory = document.getElementById("category").value;
+            let filteredBooks;
+
+            // Struktur kondisi untuk menentukan buku yang akan ditampilkan
+            if (selectedCategory === "all") {
+                filteredBooks = books; // Tampilkan semua buku
+            } else {
+                filteredBooks = books.filter(book => book.category === selectedCategory);
+            }
+
+            displayBooks(filteredBooks); // Tampilkan buku yang telah difilter
+        }
+
+        // Tampilkan semua buku saat halaman dimuat
+        window.onload = function() {
+            displayBooks(books);
+        };
+    </script>
+</body>
+</html>
