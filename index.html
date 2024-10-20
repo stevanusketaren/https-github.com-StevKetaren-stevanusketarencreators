@@ -126,3 +126,71 @@ style.ccs
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pameran Buku Perpustakaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+        h1 {
+            color: #343a40;
+        }
+        .book-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .book-item {
+            background: #ffffff;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pameran Buku Perpustakaan</h1>
+    <button id="showBooksBtn">Tampilkan Daftar Buku</button>
+    <ul class="book-list" id="bookList"></ul>
+
+    <script>
+        // Variabel
+        const books = [
+            { title: "Buku A", author: "Penulis A" },
+            { title: "Buku B", author: "Penulis B" },
+            { title: "Buku C", author: "Penulis C" },
+            { title: "Buku D", author: "Penulis D" }
+        ];
+
+        // Fungsi untuk menampilkan daftar buku
+        function showBooks() {
+            const bookList = document.getElementById('bookList');
+            bookList.innerHTML = ''; // Kosongkan daftar sebelum ditampilkan
+
+            // Struktur perulangan
+            for (let i = 0; i < books.length; i++) {
+                const book = books[i];
+                // Struktur kondisi
+                if (book.title && book.author) {
+                    const listItem = document.createElement('li');
+                    listItem.className = 'book-item';
+                    listItem.textContent = `${book.title} - ${book.author}`;
+                    bookList.appendChild(listItem);
+                }
+            }
+        }
+
+        // Event listener untuk tombol
+        document.getElementById('showBooksBtn').addEventListener('click', showBooks);
+    </script>
+
+</body>
+</html>
+
