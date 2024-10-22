@@ -237,3 +237,105 @@ style.ccs
         </table>
     </div>
 </div>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pameran Buku | Eureka Bookhouse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .book-exhibition {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .book {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pameran Buku Terbaru</h1>
+    </header>
+
+    <section class="book-exhibition">
+        <div class="book">
+            <img src="https://example.com/image1.jpg" alt="Buku 1">
+            <h2>Buku Satu</h2>
+            <p>Deskripsi singkat tentang Buku Satu. Penulis: Penulis Satu.</p>
+            <button onclick="location.href='https://example.com/buku1'">Info Lebih Lanjut</button>
+        </div>
+        <div class="book">
+            <img src="https://example.com/image2.jpg" alt="Buku 2">
+            <h2>Buku Dua</h2>
+            <p>Deskripsi singkat tentang Buku Dua. Penulis: Penulis Dua.</p>
+            <button onclick="location.href='https://example.com/buku2'">Info Lebih Lanjut</button>
+        </div>
+        <div class="book">
+            <img src="https://example.com/image3.jpg" alt="Buku 3">
+            <h2>Buku Tiga</h2>
+            <p>Deskripsi singkat tentang Buku Tiga. Penulis: Penulis Tiga.</p>
+            <button onclick="location.href='https://example.com/buku3'">Info Lebih Lanjut</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Eureka Bookhouse. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
