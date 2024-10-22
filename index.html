@@ -243,7 +243,7 @@ style.ccs
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pameran Buku | Eureka Bookhouse</title>
+    <title>Pameran Buku | Deepublish Store</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -259,42 +259,36 @@ style.ccs
             padding: 1rem 0;
         }
 
-        .book-exhibition {
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .carousel {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            padding: 20px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 20px;
         }
 
-        .book {
-            background: white;
+        .swiper-slide {
+            min-width: 300px;
+            margin: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            margin: 10px;
-            padding: 15px;
-            width: 200px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .pagination {
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .book img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
             margin-top: 10px;
-        }
-
-        button:hover {
-            background-color: #45a049;
         }
 
         footer {
@@ -302,40 +296,56 @@ style.ccs
             padding: 10px;
             background-color: #333;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Pameran Buku Terbaru</h1>
+        <h1>Pameran Buku Terbaru dari Deepublish Store</h1>
     </header>
 
-    <section class="book-exhibition">
-        <div class="book">
-            <img src="https://example.com/image1.jpg" alt="Buku 1">
-            <h2>Buku Satu</h2>
-            <p>Deskripsi singkat tentang Buku Satu. Penulis: Penulis Satu.</p>
-            <button onclick="location.href='https://example.com/buku1'">Info Lebih Lanjut</button>
+    <div class="content">
+        <p>Cek buku best seller lainnya dari Deepublish Store di sini: <b><a href="https://deepublishstore.com/best-seller/" target="_blank">Lihat lainnya</a></b></p>
+        
+        <div class="carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://deepublishstore.com/ebook-bisnis/">
+                        <img src="https://deepublishstore.com/wp-content/uploads/2024/10/deepsakti-1200x351.jpg" alt="Promo 1">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://deepublishstore.com/ebook-bisnis/">
+                        <img src="https://deepublishstore.com/wp-content/uploads/2024/10/deepsakti-1200x351.jpg" alt="Promo 2">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://deepublishstore.com/ebook-bisnis/">
+                        <img src="https://deepublishstore.com/wp-content/uploads/2024/10/deepsakti-1200x351.jpg" alt="Promo 3">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://deepublishstore.com/ebook-bisnis/">
+                        <img src="https://deepublishstore.com/wp-content/uploads/2024/10/deepsakti-1200x351.jpg" alt="Promo 4">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://deepublishstore.com/ebook-bisnis/">
+                        <img src="https://deepublishstore.com/wp-content/uploads/2024/10/deepsakti-1200x351.jpg" alt="Promo 5">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="book">
-            <img src="https://example.com/image2.jpg" alt="Buku 2">
-            <h2>Buku Dua</h2>
-            <p>Deskripsi singkat tentang Buku Dua. Penulis: Penulis Dua.</p>
-            <button onclick="location.href='https://example.com/buku2'">Info Lebih Lanjut</button>
+
+        <div class="pagination">
+            <button>Prev</button>
+            <button>Next</button>
         </div>
-        <div class="book">
-            <img src="https://example.com/image3.jpg" alt="Buku 3">
-            <h2>Buku Tiga</h2>
-            <p>Deskripsi singkat tentang Buku Tiga. Penulis: Penulis Tiga.</p>
-            <button onclick="location.href='https://example.com/buku3'">Info Lebih Lanjut</button>
-        </div>
-    </section>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Eureka Bookhouse. Semua hak dilindungi.</p>
+        <p>&copy; 2024 Deepublish Store. Semua hak dilindungi.</p>
     </footer>
 </body>
 </html>
+
