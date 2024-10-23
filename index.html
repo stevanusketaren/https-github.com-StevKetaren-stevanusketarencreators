@@ -238,6 +238,60 @@ style.ccs
     </div>
 </div>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // This script runs in the head
+        document.write("Script di antara tag head<br>");
+    </script>
+</head>
+<body>
+    <script>
+        // Display basic information
+        var nama = "John";
+        var umur = 17;
+        var berat = 60.5;
+        document.write("Nama: " + nama + ", Umur: " + umur + ", Berat: " + berat + " kg<br>");
+    </script>
+
+    <script>
+        // Alert a greeting
+        window.alert("Hallo");
+    </script>
+
+    <p id="nama-id"></p>
+    <script>
+        // Update the inner HTML of a paragraph
+        document.getElementById("nama-id").innerHTML = "Hallo dari <p>!";
+    </script>
+
+    <script>
+        // Check a condition and alert the result
+        var x = 5;
+        if (x < 2) {
+            window.alert(x + " < 2");
+        } else {
+            window.alert(x + " > 2");
+        }
+    </script>
+
+    <script>
+        // Switch statement example
+        var n = 1; // Change this value to test different cases
+        switch (n) {
+            case 1:
+                window.alert("satu");
+                break;
+            case 2:
+                window.alert("dua");
+                break;
+            default:
+                window.alert("Tidak ada");
+        }
+    </script>
+</body>
+</html>
 
 
 
