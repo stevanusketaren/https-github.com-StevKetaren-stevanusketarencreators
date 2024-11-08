@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pameran Buku - Sinopsis Novel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .toc {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .toc td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .toc th {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .content-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section img {
+            max-width: 300px;
+            display: block;
+            margin: 20px 0;
+        }
+
+        #novelImage {
+            max-width: 100%;
+        }
+
+        .show-content-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .show-content-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .hidden-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pameran Buku: Sinopsis Novel</h1>
+
+        <!-- Table of Contents -->
+        <h2>Daftar Isi</h2>
+        <table class="toc">
+            <tr>
+                <th>No</th>
+                <th>Judul</th>
+                <th>Aksi</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sinopsis Novel</td>
+                <td><button class="show-content-btn" onclick="toggleContent('sinopsis')">Lihat</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bagian Pertama</td>
+                <td><button class="show-content-btn" onclick="toggleContent('bagianPertama')">Lihat</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bagian Kedua</td>
+                <td><button class="show-content-btn" onclick="toggleContent('bagianKedua')">Lihat</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Penokohan dalam Novel</td>
+                <td><button class="show-content-btn" onclick="toggleContent('penokohan')">Lihat</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Keunggulan Novel</td>
+                <td><button class="show-content-btn" onclick="toggleContent('keunggulan')">Lihat</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Kelemahan Novel</td>
+                <td><button class="show-content-btn" onclick="toggleContent('kelemahan')">Lihat</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Amanat dan Kesimpulan Novel</td>
+                <td><button class="show-content-btn" onclick="toggleContent('amanat')">Lihat</button></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Buku Best Seller Novel</td>
+                <td><button class="show-content-btn" onclick="toggleContent('bestSeller')">Lihat</button></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Gambar Buku</td>
+                <td><button class="show-content-btn" onclick="toggleContent('gambarBuku')">Lihat</button></td>
+            </tr>
+        </table>
+
+        <!-- Content Sections -->
+        <div id="sinopsis" class="content-section hidden-content">
+            <h3>Sinopsis Novel</h3>
+            <p>Novel ini menceritakan perjalanan seorang tokoh utama dalam mencari jati diri. Konflik dalam cerita berkembang seiring dengan pengungkapan misteri yang ada di sekitar tokoh tersebut. Cerita ini menggambarkan betapa kuatnya tekad seseorang dalam menghadapi cobaan hidup.</p>
+        </div>
+
+        <div id="bagianPertama" class="content-section hidden-content">
+            <h3>Bagian Pertama</h3>
+            <p>Bagian pertama novel ini berfokus pada pengenalan tokoh utama dan latar belakang kehidupannya. Konflik pertama mulai muncul saat tokoh utama menghadapi kesulitan dalam hidupnya.</p>
+        </div>
+
+        <div id="bagianKedua" class="content-section hidden-content">
+            <h3>Bagian Kedua</h3>
+            <p>Bagian kedua mengungkapkan perjalanan tokoh utama untuk mencari solusi atas masalah yang dihadapi. Di sini, ia bertemu dengan berbagai karakter penting yang mempengaruhi keputusan-keputusannya.</p>
+        </div>
+
+        <div id="penokohan" class="content-section hidden-content">
+            <h3>Penokohan dalam Novel</h3>
+            <p>Novel ini memiliki beberapa tokoh penting yang memiliki karakter kuat dan mempengaruhi alur cerita. Tokoh utama yang bernama Anton adalah seorang pemuda yang penuh semangat, namun mengalami krisis identitas. Selain itu, tokoh pendukung seperti Lina, sahabatnya, juga memainkan peran penting dalam membantu Anton menemukan jalan keluar dari masalahnya.</p>
+        </div>
+
+        <div id="keunggulan" class="content-section hidden-content">
+            <h3>Keunggulan Novel</h3>
+            <p>Novel ini memiliki keunggulan dalam cara penyampaian cerita yang mendalam dan penuh makna. Alur ceritanya sangat menarik, dan karakter-karakter yang dibangun sangat kuat serta mudah untuk dipahami.</p>
+        </div>
+
+        <div id="kelemahan" class="content-section hidden-content">
+            <h3>Kelemahan Novel</h3>
+            <p>Namun, novel ini juga memiliki beberapa kelemahan, seperti penggunaan dialog yang terkadang terlalu panjang dan membingungkan pembaca. Selain itu, beberapa bagian cerita terasa agak dipaksakan.</p>
+        </div>
+
+        <div id="amanat" class="content-section hidden-content">
+            <h3>Amanat dan Kesimpulan Novel</h3>
+            <p>Amanat dari novel ini adalah pentingnya mengenal diri sendiri dan menghadapi tantangan hidup dengan keberanian dan tekad yang kuat. Novel ini mengajarkan pembaca bahwa tidak ada yang tidak mungkin selama kita terus berusaha.</p>
+        </div>
+
+        <div id="bestSeller" class="content-section hidden-content">
+            <h3>Buku Best Seller Novel</h3>
+            <p>Novel ini telah menjadi best seller di berbagai negara dan telah diterjemahkan ke dalam beberapa bahasa. Kepopulerannya mencerminkan kualitas cerita dan pesan moral yang terkandung di dalamnya.</p>
+        </div>
+
+        <div id="gambarBuku" class="content-section hidden-content">
+            <h3>Gambar Buku</h3>
+            <img src="https://via.placeholder.com/300x400?text=Cover+Buku" alt="Cover Novel" id="novelImage">
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk menampilkan atau menyembunyikan konten berdasarkan ID
+        function toggleContent(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.classList.contains('hidden-content')) {
+                section.classList.remove('hidden-content');
+            } else {
+                section.classList.add('hidden-content');
+            }
+        }
+    </script>
+
+</body>
+</html>
