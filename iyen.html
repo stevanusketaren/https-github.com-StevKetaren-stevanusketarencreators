@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pameran Buku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .book-item {
+            margin: 15px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .book-item img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border: 2px solid #ddd;
+        }
+
+        .book-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .description {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Mobile-friendly styling */
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book-item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pameran Buku</h1>
+
+        <div class="gallery">
+            <!-- Buku 1 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/bkjs/files/shot.jpg" alt="Buku 1" onclick="toggleDescription('deskripsiBuku1')" aria-label="Klik untuk melihat deskripsi Buku 1">
+                <div id="deskripsiBuku1" class="description" role="region" aria-labelledby="deskripsiBuku1">
+                    <p><strong>Buku 1:</strong> Buku ini menceritakan petualangan seru di dunia fantasi. Ikuti kisahnya yang penuh misteri!</p>
+                </div>
+            </div>
+            <!-- Buku 2 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/atrz/files/shot.jpg" alt="Buku 2" onclick="toggleDescription('deskripsiBuku2')" aria-label="Klik untuk melihat deskripsi Buku 2">
+                <div id="deskripsiBuku2" class="description" role="region" aria-labelledby="deskripsiBuku2">
+                    <p><strong>Buku 2:</strong> Buku ini membahas kehidupan sehari-hari dengan humor yang menghibur. Cocok untuk semua kalangan.</p>
+                </div>
+            </div>
+            <!-- Buku 3 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/wuhz/files/shot.jpg" alt="Buku 3" onclick="toggleDescription('deskripsiBuku3')" aria-label="Klik untuk melihat deskripsi Buku 3">
+                <div id="deskripsiBuku3" class="description" role="region" aria-labelledby="deskripsiBuku3">
+                    <p><strong>Buku 3:</strong> Sebuah novel inspiratif yang mengajak pembaca untuk mengejar impian mereka tanpa takut gagal.</p>
+                </div>
+            </div>
+            <!-- Buku 4 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/pkyr/files/shot.jpg" alt="Buku 4" onclick="toggleDescription('deskripsiBuku4')" aria-label="Klik untuk melihat deskripsi Buku 4">
+                <div id="deskripsiBuku4" class="description" role="region" aria-labelledby="deskripsiBuku4">
+                    <p><strong>Buku 4:</strong> Buku ini mengeksplorasi berbagai pandangan tentang kehidupan dan bagaimana kita bisa menjalani hidup dengan bijak.</p>
+                </div>
+            </div>
+            <!-- Buku 5 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/qzfa/files/shot.jpg" alt="Buku 5" onclick="toggleDescription('deskripsiBuku5')" aria-label="Klik untuk melihat deskripsi Buku 5">
+                <div id="deskripsiBuku5" class="description" role="region" aria-labelledby="deskripsiBuku5">
+                    <p><strong>Buku 5:</strong> Mengungkap rahasia sejarah yang terlupakan dalam buku yang penuh petualangan dan penemuan besar.</p>
+                </div>
+            </div>
+            <!-- Buku 6 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/gvij/files/shot.jpg" alt="Buku 6" onclick="toggleDescription('deskripsiBuku6')" aria-label="Klik untuk melihat deskripsi Buku 6">
+                <div id="deskripsiBuku6" class="description" role="region" aria-labelledby="deskripsiBuku6">
+                    <p><strong>Buku 6:</strong> Sebuah buku yang mengajak pembaca untuk mengubah cara pandang terhadap kehidupan sehari-hari dan menemukan kebahagiaan sejati.</p>
+                </div>
+            </div>
+            <!-- Buku 7 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/iswr/files/shot.jpg" alt="Buku 7" onclick="toggleDescription('deskripsiBuku7')" aria-label="Klik untuk melihat deskripsi Buku 7">
+                <div id="deskripsiBuku7" class="description" role="region" aria-labelledby="deskripsiBuku7">
+                    <p><strong>Buku 7:</strong> Buku ini membawa pembaca ke dalam dunia bisnis dan memberikan wawasan tentang cara sukses dalam berwirausaha.</p>
+                </div>
+            </div>
+            <!-- Buku 8 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/ulqe/files/shot.jpg" alt="Buku 8" onclick="toggleDescription('deskripsiBuku8')" aria-label="Klik untuk melihat deskripsi Buku 8">
+                <div id="deskripsiBuku8" class="description" role="region" aria-labelledby="deskripsiBuku8">
+                    <p><strong>Buku 8:</strong> Buku ini mengajarkan tentang cara-cara praktis untuk mengelola stres dan hidup lebih seimbang.</p>
+                </div>
+            </div>
+            <!-- Buku 9 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/meft/files/shot.jpg" alt="Buku 9" onclick="toggleDescription('deskripsiBuku9')" aria-label="Klik untuk melihat deskripsi Buku 9">
+                <div id="deskripsiBuku9" class="description" role="region" aria-labelledby="deskripsiBuku9">
+                    <p><strong>Buku 9:</strong> Sebuah cerita tentang pertemuan tak terduga dan bagaimana hal itu mengubah hidup seseorang untuk selamanya.</p>
+                </div>
+            </div>
+            <!-- Buku 10 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/hnzk/files/shot.jpg" alt="Buku 10" onclick="toggleDescription('deskripsiBuku10')" aria-label="Klik untuk melihat deskripsi Buku 10">
+                <div id="deskripsiBuku10" class="description" role="region" aria-labelledby="deskripsiBuku10">
+                    <p><strong>Buku 10:</strong> Buku ini menceritakan tentang perjalanan seorang petualang yang menaklukkan dunia dan menemukan makna sejati kehidupan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            const description = document.getElementById(id);
+            // Toggle visibility
+            description.style.display = description.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>
